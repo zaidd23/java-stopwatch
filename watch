@@ -1,0 +1,33 @@
+public class Watch {
+    
+    private long Start_time ;
+    private long Stop_time ;
+    
+    public void Start(){
+        
+        Start_time=System.currentTimeMillis() ;
+        System.out.println("count started ");
+        
+        
+        
+    }
+    
+    public void Stop(){
+        
+        
+        Stop_time=System.currentTimeMillis() ;
+        
+        long Differnce=Stop_time-Start_time ;
+        
+        System.out.println(Differnce/1000+"seconds ");
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+}
