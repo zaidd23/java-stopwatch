@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+
+public class Stop_watch {
+
+    public static void main(String[] args) {
+      
+        Watch w1=new Watch();
+        System.out.println("enter b to begin");
+        Scanner s1=new Scanner(System.in ) ;
+        String  time=s1.nextLine() ;
+        
+        if(time.equalsIgnoreCase("b")){
+            
+            w1.Start();
+            
+            
+        }
+        System.out.println("enter s to stop");
+          time=s1.nextLine() ;
+         if(time.equalsIgnoreCase("s")){
+            
+          w1.Stop();
+            
+            
+        }
+        
+        s1.close();
+    }
+}
